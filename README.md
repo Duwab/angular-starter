@@ -17,6 +17,12 @@ assets\
   |   |-- entity\
   |   |-- lightbox\
   |   |-- page\
+  |
+index.php         // root the public application
+  |
+dev.php           // root the dev application
+  |
+.htaccess
 ```
 
 # Demo
