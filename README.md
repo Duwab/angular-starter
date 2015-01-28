@@ -33,3 +33,4 @@ dev.php           // root for the development application
 
 # Demo
 http://angular-starter.duwab.com/
+http://angular-starter.duwab.com/develop/entity/artwork-explore
