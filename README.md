@@ -28,7 +28,7 @@ index.php         // root for the public application
   |
 dev.php           // root for the development application
   |
-.htaccess         // redirects urls to index.php (default) or dev.php (for /develop url)
+.htaccess         // redirects urls to index.php (default) or dev.php (for <domain>/develop/...)
 ```
 
 # Demo
