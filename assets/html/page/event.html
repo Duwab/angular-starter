@@ -1,0 +1,28 @@
+<div class="profile_event">
+	<!--Page event
+	<a href="/artbeat/profile/123124">Aller aux profils</a>
+	-->
+	<div class="page_cover">
+	</div>
+	<div id="map-event"></div>
+	<div class="page_content">
+		<div class="page_event_info">
+			Voici un encart pour plein d'événements
+		</div>
+	</div>
+</div>
+<script>
+
+function initialize() {
+	var mapCanvas = document.getElementById('map-event');
+	var mapOptions = {
+		center: new google.maps.LatLng(37.784974,-122.3782052),
+		zoom: 8,
+		scrollwheel: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+};
+//google.maps.event.addDomListener(window, 'load', initialize);
+initialize();
+</script>

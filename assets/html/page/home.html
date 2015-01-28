@@ -1,0 +1,84 @@
+<div class="page_home">
+	<div class="page_content">
+		<h1>Home Artbeat</h1>
+		<div class="home_squares">
+			<div class="home_square"></div>
+			<div class="home_square"></div>
+			<div class="home_square"></div>
+			<div class="home_square"></div>
+			<div class="home_square"></div>
+			<div class="home_square"></div>
+		</div>
+		
+		<br>
+		<h1>Links and remarks</h1>
+		<br>
+		
+		<div>Nom de la page {{artbeat.page}}</div>
+
+		<div>Profil: {{artbeat.user.name || 'none'}}</div>
+		<br>
+		<div>
+		Liens<br>
+		<a target="_blank" href="http://weblogs.asp.net/dwahlin/dynamically-loading-controllers-and-views-with-angularjs-and-requirejs">Dynamically Loading Controllers and Views with AngularJS and RequireJS</a>
+		<br>
+		<a target="_blank" href="http://www.sitepoint.com/using-requirejs-angularjs-applications/">Using RequireJS in AngularJS Applications</a>
+		<br>
+		<a target="_blank" href="http://www.bennadel.com/blog/2553-loading-angularjs-components-after-your-application-has-been-bootstrapped.htm">Loading AngularJS Components After Your Application Has Been Bootstrapped</a>
+		<br>
+		<a target="_blank" href="https://docs.angularjs.org/tutorial/step_07">Angular tutorial step 7</a>
+		<br><br>
+		<a target="_blank" href="https://scotch.io/tutorials/single-page-apps-with-angularjs-routing-and-templating">Single page application</a>
+		<br>
+		<a target="_blank" href="https://www.airpair.com/angularjs/building-angularjs-app-tutorial">Airplanes Demo Introduction</a>
+		<br>
+		<a target="_blank" href="http://java.dzone.com/articles/angularjs-single-page-app">SPA with API</a>
+
+		<br><br>
+		<a target="_blank" href="https://thinkster.io/angulartutorial/mean-stack-tutorial/">MEAN stack application tutorial</a>
+
+		<br><br>
+		<a target="_blank" href="http://www.benlesh.com/2013/08/angular-compile-how-it-works-how-to-use.html">Comment fonctionne $compile</a>
+		<br><br>
+		<div ng-show="artbeat.location[0]=='event'">On a une url avec event</div>
+		<div ng-show="artbeat.location[0]=='profile'">On a une url avec profile</div>
+		<br><br>
+		<a href="/event/123124">Aller aux events</a>
+		<a ng-click="test_lightbox('event')">Test Lightbox</a>
+		<a ng-click="test_popup('event')">Test popup</a>
+		<a ng-click="logout('event')"><strong>Logout</strong></a>
+		</div>
+		<br>
+		<button lightbox-artwork>Lightbox</button>
+		<button popup>Popup</button>
+
+		<br>
+		<br>
+		<h2>Ajouter un élément structurel</h2>
+		<ul>
+			<li>Ajouter le template dans angular/entity, dans un sous-dossier éventuellement, caractères alphanumériques uniquement</li>
+			<li>Ajouter la directive associée dans directives.js, en faisant attention à la syntaxe (un élément artwork-explore devient la directive artworkExplore)</li>
+			<li>Ajouter dans dev.php d'éventuelles variables à initialiser dans le scope</li>
+			<li>Observer l'élément seul à <a target="_blank" href="http://angular-starter.duwab.com/develop/entity/artwork-explore">http://angular-starter.duwab.com/develop/entity/artwork-explore</a> par exemple</li>
+		</ul>
+
+		<br>
+		<br>
+		<h2>Problèmes de compatibilité observés</h2>
+		<ul>
+			<li>Navigation sous safari pour windows: le retour arrière marche pas toujours du premier coup</li>
+		</ul>
+		
+		
+		<br><br>
+		<div>
+			{{serviceOutput}}
+			<br/><br/>
+			{{factoryOutput}}
+			<br/><br/>
+			{{providerOutput}}
+		</div>
+		
+		
+	</div>
+</div>

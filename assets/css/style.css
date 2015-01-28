@@ -1,0 +1,279 @@
+/* 
+
+	MAIN
+
+ */
+ 
+ .vertical{
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+ }
+ 
+ header{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 30px;
+	background: black;
+	z-index: 10;
+}
+.artwork-explore{
+	display: inline-block;
+	padding: 20px 35px;
+	margin: 20px 35px;
+	border: 1px solid black;
+	min-width: 300px;
+}
+
+.left_buttons a{
+	margin: 2px 0 0 2px;
+	padding: 2px 20px;
+	text-align: center;
+	color: white;
+	border: 1px solid white;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.left_buttons a.active{
+	color: black;
+	font-weight: bold;
+	background-color: white;
+}
+
+.head_profile{
+	position: fixed;
+	padding: 2px 20px;
+	top: 2px;
+	right: 230px;
+	color: white;
+	border: 1px solid white;
+}
+
+nav{
+	position: fixed;
+	top: 30px;
+	right: 0;
+	bottom: 0;
+	width: 230px;
+	background: #222;
+	z-index: 10;
+}
+
+page{
+	position: relative;
+	display: block;
+	margin: 60px 230px 100px 0px;
+	min-height; 100%;
+	/*background: yellow;*/
+}
+
+a[ ng-click ] {
+	cursor: pointer ;
+	user-select: none ;
+		-webkit-user-select: none ;
+		-moz-user-select: none ;
+		-ms-user-select: none ;
+		-o-user-select: none ;
+	text-decoration: underline ;
+}
+
+/*
+
+	LIGHTBOX
+
+*/
+
+.lbx_frame_bg{
+	position:fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.4);
+	z-index: 10;
+}
+
+.lbx_frame_content{
+	position:fixed;
+	top: 50px;
+	right: 50px;
+	bottom: 50px;
+	left: 50px;
+	background-color: white;
+}
+
+.popup_frame{
+	position: relative;
+	height: 100%;
+	text-align: center;
+	overflow-y: scroll;
+}
+
+.popup_frame_content{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 30px auto ;
+}
+
+.popup_test{
+	margin: auto;
+	border: 1px solid black;
+	width: 400px;
+	height: 140px;
+	padding-top: 110px;
+}
+
+/*
+
+	Pages - Common
+
+*/
+
+.page_cover{
+	margin: 10px;
+	border: 1px solid black;
+	height: 250px;
+}
+
+.page_content{
+	margin: 10px;
+	border: 1px solid black;
+	position: relative;
+	min-height: 500px;
+}
+.content_left{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	bottom: 10px;
+	width: 240px;
+	border: 1px solid black;
+}
+.content_right{
+	position: relative;
+	margin: 10px 10px 10px 270px;
+	border: 1px solid black;
+	padding: 10px;
+}
+
+/*
+
+	Page - Home
+
+*/
+
+.page_home .page_content{
+	padding: 0px 20px 20px;
+}
+
+.home_squares{
+	margin: 10px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.home_square{
+	margin: 10px;
+	display: inline-block;
+	border: 1px solid black;
+	width: 45%;
+	height: 400px;
+	background-color: #000;
+	cursor: pointer;
+}
+.home_square:hover{
+	background-color: #FFF;
+	
+	
+}
+
+/*
+
+	Page - Profile
+
+*/
+
+/*
+
+	Page - Event
+
+*/
+#map-event{
+	height: 400px;
+	margin: 10px;
+}
+.page_event_info{
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	padding: 200px 30px 250px;
+	margin: 10px;
+	border: 1px solid black;
+}
+
+/*
+
+	Block - Common
+
+*/
+
+.suggest_block{
+	position: relative;
+	margin: 10px;
+	border: 1px solid black;
+}
+
+.sugg_title{
+	margin: 10px;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+.sugg_items{
+	margin: 10px;
+	border: 1px solid black;
+}
+
+/*
+
+	Block - Suggestion
+
+*/
+
+.sugg_profile{
+	margin: 10px;
+	border: 1px solid black;
+	height: 30px;
+	width: 30px;
+	background-color: #000;
+	display: inline-block;
+}
+.sugg_event{
+	margin: 10px;
+	border: 1px solid grey;
+	height: 30px;
+	width: 30px;
+	background-color: grey;
+	display: inline-block;
+}
+
+/*
+
+	Entities
+
+*/
+
+/*
+
+	Post
+
+*/
+
+.post{
+	margin: 10px;
+	padding: 20px 35px;
+	border: 1px solid black;
+}
