@@ -6,7 +6,7 @@ Full initialized front-end project based on angularJS framework
 ```
 assets\
   |
-  |-- /js\
+  |-- js\
   |   |
   |   |-- angular.min.js
   |   |-- main.js
