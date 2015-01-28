@@ -4,19 +4,19 @@ Full initialized front-end project based on angularJS framework
 # Architecture
 
 ```
-/assets
+assets\
   |
-  |-- js
+  |-- /js\
   |   |
   |   |-- angular.min.js
   |   |-- main.js
   |   |-- directives.js
   |
-  |-- templates
+  |-- templates\
   |   |
-  |   |-- entity
-  |   |-- lightbox
-  |   |-- page
+  |   |-- entity\
+  |   |-- lightbox\
+  |   |-- page\
 ```
 
 # Demo
