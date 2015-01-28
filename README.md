@@ -8,21 +8,27 @@ assets\
   |
   |-- js\
   |   |
-  |   |-- angular.min.js
-  |   |-- main.js
-  |   |-- directives.js
+  |   |-- main.js         // script for public application
+  |   |-- main-dev.js     // script for development application
+  |   |-- directives.js   // common directives for the whole application
+  |   |-- jquery.min.js
+  |   |-- angular\
+  |   |   |
+  |   |   |-- angular.min.js
+  |   |   |-- angular-route.min.js
+  |   |   |-- ...
   |
-  |-- templates\
+  |-- templates\          // html templates with ng tags
   |   |
-  |   |-- entity\
-  |   |-- lightbox\
-  |   |-- page\
+  |   |-- entity\         // items (independant blocks like people, posts, products, ...)
+  |   |-- lightbox\       // lightboxes, popups, ...
+  |   |-- page\           // body less header, footer, ...
   |
-index.php         // root the public application
+index.php         // root for the public application
   |
-dev.php           // root the dev application
+dev.php           // root for the development application
   |
-.htaccess
+.htaccess         // redirects urls to index.php (default) or dev.php (for /develop url)
 ```
 
 # Demo
