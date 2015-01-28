@@ -3,6 +3,7 @@ Full initialized front-end project based on angularJS framework
 
 # Architecture
 
+```
 /assets
   |
   |-- js
@@ -16,6 +17,7 @@ Full initialized front-end project based on angularJS framework
   |   |-- entity
   |   |-- lightbox
   |   |-- page
+```
 
 # Demo
 http://angular-starter.duwab.com/
