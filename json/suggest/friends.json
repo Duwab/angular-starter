@@ -1,0 +1,14 @@
+{
+	"status":"Success",
+	"data" : [
+		{
+			"name" : "Jean"
+		},
+		{
+			"name" : "Paul"
+		},
+		{
+			"name" : "Michel"
+		}
+	]
+}

@@ -1,4 +1,4 @@
-<div class="page_profile">
+<div class="page_profile" ng-controller="ProfileController as profile">
 	<!--Page Profil
 	<a href="/event/123124">Aller aux events</a>
 	<div>
@@ -18,16 +18,7 @@
 					<div class="sugg_event"></div>
 				</div>
 			</div>
-			<div class="suggest_block suggest_profiles">
-				<div class="sugg_title">
-					Profiles you could meet
-				</div>
-				<div class="sugg_items">
-					<div class="sugg_profile"></div>
-					<div class="sugg_profile"></div>
-					<div class="sugg_profile"></div>
-				</div>
-			</div>
+			<suggest-friends></suggest-friends>
 		</div>
 		<div class="content_right">
 			<post ng-repeat="x in [1,2,3,4]"></post>

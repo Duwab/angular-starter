@@ -47,9 +47,13 @@
 	position: fixed;
 	padding: 2px 20px;
 	top: 2px;
-	right: 230px;
+	right: 30px;
 	color: white;
 	border: 1px solid white;
+}
+
+.withnav nav{
+	right: 230px;
 }
 
 nav{
@@ -60,14 +64,22 @@ nav{
 	width: 230px;
 	background: #222;
 	z-index: 10;
+	display:none;
+}
+
+.withnav nav{
+	display: block;
 }
 
 page{
 	position: relative;
 	display: block;
-	margin: 60px 230px 100px 0px;
+	margin: 60px 0 100px 0px;
 	min-height; 100%;
 	/*background: yellow;*/
+}
+.withnav page{
+	margin: 60px 230px 100px 0px;
 }
 
 a[ ng-click ] {
@@ -124,6 +136,45 @@ a[ ng-click ] {
 	width: 400px;
 	height: 140px;
 	padding-top: 110px;
+}
+
+/*
+	LIGHTBOX - Artwork
+*/
+
+.fullscreen-artwork{
+	position: relative;
+	height: 100%;
+}
+
+.fsa_info{
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 200px;
+	background: yellow;
+	padding: 20px;
+}
+
+.fsa_gallery{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 240px;
+	background: blue;
+	padding: 20px;
+}
+
+.fsag_slide{
+	text-align: center;
+	height: 100%;
+	position: relative;
+}
+
+.fsag_slide p{
+	margin-top: 200px;
 }
 
 /*
@@ -250,6 +301,9 @@ a[ ng-click ] {
 	width: 30px;
 	background-color: #000;
 	display: inline-block;
+	color: #FFF;
+	text-align: center;
+	line-height: 30px;
 }
 .sugg_event{
 	margin: 10px;
